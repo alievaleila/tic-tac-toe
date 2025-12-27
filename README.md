@@ -13,6 +13,6 @@ A lightweight, terminal-based implementation of the classic Tic-Tac-Toe game, fo
 * **Logic:** Array manipulation, nested loops for matrix traversal, and input stream handling via `Scanner`.
 
 ## 📂 Project Structure
-The project follows a modular approach for better readability:
-* `TicTacToe.java`: Acts as the **Model**, holding the state of the game board and the current player's turn.
-* `App.java`: Acts as the **Controller**, handling the game loop, user inputs, and visual output (UI).
+The project is organized into two classes to separate data storage from game logic:
+* `TicTacToe.java`: A data container class that stores the game state (the 3x3 board and the current player's turn).
+* `App.java`: The core engine of the application, responsible for handling user input, executing game rules, and rendering the board to the console.
