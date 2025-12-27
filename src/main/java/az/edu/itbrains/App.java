@@ -12,6 +12,7 @@ public class App {
         for (int i = 0; i < 9; i++) {
             board[i] = String.valueOf(i + 1);
         }
+
         printBoard();
 
         while (true) {
@@ -48,7 +49,6 @@ public class App {
         System.out.println("|---|---|---|");
     }
 
-
     private static String checkWinner() {
         int[][] wins = {
                 {0, 1, 2}, {3, 4, 5}, {6, 7, 8},
@@ -69,6 +69,4 @@ public class App {
         }
         return "draw";
     }
-
-
 }
